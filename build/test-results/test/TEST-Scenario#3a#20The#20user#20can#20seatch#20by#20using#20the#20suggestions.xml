@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: The user can seatch by using the suggestions" tests="8" skipped="0" failures="2" errors="0" timestamp="2019-10-29T19:01:23" hostname="herniep" time="4.269">
+  <properties/>
+  <testcase name="Given I’m on the homepage" classname="Scenario: The user can seatch by using the suggestions" time="0.0"/>
+  <testcase name="When I type 'The name of the w' into the search field" classname="Scenario: The user can seatch by using the suggestions" time="0.0"/>
+  <testcase name="And the suggestions list is displayed" classname="Scenario: The user can seatch by using the suggestions" time="0.0"/>
+  <testcase name="And I click on the first suggestion in the list" classname="Scenario: The user can seatch by using the suggestions" time="0.0"/>
+  <testcase name="Then I go to the search results page" classname="Scenario: The user can seatch by using the suggestions" time="0.0"/>
+  <testcase name="When I click on the first result link" classname="Scenario: The user can seatch by using the suggestions" time="0.0"/>
+  <testcase name="Then I go to the 'Patrick Rothfuss - The Books' page" classname="Scenario: The user can seatch by using the suggestions" time="0.001">
+    <failure message="org.junit.ComparisonFailure: the URL obtained was 'https://en.wikipedia.org/wiki/The_Name_of_the_Wind' but the expected is 'https://www.patrickrothfuss.com/content/books.asp'. expected:&lt;https://[www.patrickrothfuss.com/content/books.asp]&gt; but was:&lt;https://[en.wikipedia.org/wiki/The_Name_of_the_Wind]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: the URL obtained was 'https://en.wikipedia.org/wiki/The_Name_of_the_Wind' but the expected is 'https://www.patrickrothfuss.com/content/books.asp'. expected:&lt;https://[www.patrickrothfuss.com/content/books.asp]&gt; but was:&lt;https://[en.wikipedia.org/wiki/The_Name_of_the_Wind]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at com.google.googleTest.businessController.BusinessController.compareTabURL(BusinessController.java:152)
+	at com.google.googleTest.steps.StepDefinition.iGoToThePatrickRothfussTheBooksPage(StepDefinition.java:86)
+	at ✽.Then I go to the 'Patrick Rothfuss - The Books' page(GoogleSearch.feature:29)
+</failure>
+  </testcase>
+  <testcase name="classMethod" classname="Scenario: The user can seatch by using the suggestions" time="6.618">
+    <failure message="org.junit.ComparisonFailure: the URL obtained was 'https://en.wikipedia.org/wiki/The_Name_of_the_Wind' but the expected is 'https://www.patrickrothfuss.com/content/books.asp'. expected:&lt;https://[www.patrickrothfuss.com/content/books.asp]&gt; but was:&lt;https://[en.wikipedia.org/wiki/The_Name_of_the_Wind]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: the URL obtained was 'https://en.wikipedia.org/wiki/The_Name_of_the_Wind' but the expected is 'https://www.patrickrothfuss.com/content/books.asp'. expected:&lt;https://[www.patrickrothfuss.com/content/books.asp]&gt; but was:&lt;https://[en.wikipedia.org/wiki/The_Name_of_the_Wind]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at com.google.googleTest.businessController.BusinessController.compareTabURL(BusinessController.java:152)
+	at com.google.googleTest.steps.StepDefinition.iGoToThePatrickRothfussTheBooksPage(StepDefinition.java:86)
+	at ✽.Then I go to the 'Patrick Rothfuss - The Books' page(GoogleSearch.feature:29)
+</failure>
+  </testcase>
+  <system-out><![CDATA[2019-Oct-29 14:01:21 [Test] INFO  : Test start
+2019-Oct-29 14:01:21 [Test] INFO  : Scenario: The user can seatch by using the suggestions
+2019-Oct-29 14:01:21 [Test] INFO  : Seature: Google homepage search
+
+  @TechTest
+  Scenario: User can search by using the suggestions                  ?[90m# GoogleSearch.feature:12?[0m
+    ?[32mGiven ?[0m?[32mI’m on the homepage?[0m                                         ?[90m# StepDefinition.ImOnTheHomepage()?[0m
+    ?[32mWhen ?[0m?[32mI type 'The name of the w' into the search field?[0m             ?[90m# StepDefinition.iTypeTheNameOfTheWIntoTheSearchField()?[0m
+    ?[32mAnd ?[0m?[32mthe suggestions list is displayed?[0m                             ?[90m# StepDefinition.theSuggestionsListIsDisplayed()?[0m
+    ?[32mAnd ?[0m?[32mI click on the first suggestion in the list?[0m                   ?[90m# StepDefinition.iClickOnTheFirstSuggestionInTheList()?[0m
+    ?[32mThen ?[0m?[32mI go to the search results page?[0m                              ?[90m# StepDefinition.iGoToTheSearchResultsPage()?[0m
+    ?[31mAnd ?[0m?[31mthe first result is 'The Name of the Wind - Patrick Rothfuss'?[0m ?[90m# StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss()?[0m
+      ?[31morg.junit.ComparisonFailure: the result was 'The Name of the Wind - Wikipedia' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:<... Name of the Wind - [Wikipedia]> but was:<... Name of the Wind - [Patrick Rothfuss]>
+      	at org.junit.Assert.assertEquals(Assert.java:115)
+      	at com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)
+      	at com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)
+      	at ✽.And the first result is 'The Name of the Wind - Patrick Rothfuss'(GoogleSearch.feature:18)
+      ?[0m
+2019-Oct-29 14:01:21 [Test] INFO  : ----------Operation: Go to google home page----------
+2019-Oct-29 14:01:23 [Test] INFO  : Driver selected: 'Chrome'. The browser opened the following url: 'http://www.google.com'.
+2019-Oct-29 14:01:23 [Test] INFO  : The element 'google search button' was visible. Screenshot taken: true
+2019-Oct-29 14:01:23 [Test] INFO  : ----------Operation successfully completed----------
+
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}) on port 11576
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Oct 29, 2019 2:01:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

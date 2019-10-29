@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runners.TestRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="herniep" time="0.0">
+  <properties/>
+  <system-out><![CDATA[Feature: Google Homepage Search
+2019-Oct-29 14:01:12 [Test] INFO  : ----------Operation: Type in the google search field----------
+2019-Oct-29 14:01:12 [Test] INFO  : In the element 'google search field' was written the string 'The name of the wind'. Screenshot taken: false
+2019-Oct-29 14:01:13 [Test] INFO  : The element 'suggestion list' is visible. Screenshot taken: true
+2019-Oct-29 14:01:13 [Test] INFO  : The element 'google logo' was clicked. Screenshot taken: false
+2019-Oct-29 14:01:13 [Test] INFO  : ----------Operation successfully completed----------
+
+2019-Oct-29 14:01:13 [Test] INFO  : ----------Operation: Click on the google search button----------
+2019-Oct-29 14:01:15 [Test] INFO  : The element 'google search button' was clicked. Screenshot taken: false
+2019-Oct-29 14:01:15 [Test] INFO  : ----------Operation successfully completed----------
+
+2019-Oct-29 14:01:15 [Test] INFO  : ----------Operation: Check the google results page----------
+2019-Oct-29 14:01:15 [Test] INFO  : The element 'all results option' was visible. Screenshot taken: true
+2019-Oct-29 14:01:15 [Test] INFO  : ----------Operation successfully completed----------
+
+2019-Oct-29 14:01:15 [Test] INFO  : ----------Operation: Check the first google result----------
+2019-Oct-29 14:01:15 [Test] INFO  : The element 'first search result' has the text 'The Name of the Wind - Wikipedia'. Screenshot taken: false
+2019-Oct-29 14:01:15 [Test] INFO  : Driver closed
+2019-Oct-29 14:01:15 [Test] INFO  : Test end
+2019-Oct-29 14:01:17 [Test] INFO  : ----------Operation: Type in the google search field----------
+2019-Oct-29 14:01:18 [Test] INFO  : In the element 'google search field' was written the string 'The Name of the w'. Screenshot taken: false
+2019-Oct-29 14:01:18 [Test] INFO  : ----------Operation successfully completed----------
+
+2019-Oct-29 14:01:18 [Test] INFO  : ----------Operation: Check that the suggestion list is displayed----------
+2019-Oct-29 14:01:19 [Test] INFO  : The element 'suggestion list' was visible. Screenshot taken: true
+2019-Oct-29 14:01:19 [Test] INFO  : ----------Operation successfully completed----------
+
+2019-Oct-29 14:01:19 [Test] INFO  : ----------Operation: Click on specific element of the suggestion list----------
+2019-Oct-29 14:01:20 [Test] INFO  : The element 'element '1' from suggestion list' was clicked. Screenshot taken: false
+2019-Oct-29 14:01:20 [Test] INFO  : ----------Operation successfully completed----------
+
+2019-Oct-29 14:01:20 [Test] INFO  : ----------Operation: Check the google results page----------
+2019-Oct-29 14:01:21 [Test] INFO  : The element 'all results option' was visible. Screenshot taken: true
+2019-Oct-29 14:01:21 [Test] INFO  : ----------Operation successfully completed----------
+
+2019-Oct-29 14:01:21 [Test] INFO  : ----------Operation: Check the first google result----------
+2019-Oct-29 14:01:21 [Test] INFO  : The element 'first search result' has the text 'The Name of the Wind - Wikipedia'. Screenshot taken: false
+2019-Oct-29 14:01:21 [Test] INFO  : Driver closed
+2019-Oct-29 14:01:21 [Test] INFO  : Test end
+2019-Oct-29 14:01:23 [Test] INFO  : ----------Operation: Type in the google search field----------
+2019-Oct-29 14:01:23 [Test] INFO  : In the element 'google search field' was written the string 'The Name of the w'. Screenshot taken: false
+2019-Oct-29 14:01:23 [Test] INFO  : ----------Operation successfully completed----------
+
+2019-Oct-29 14:01:23 [Test] INFO  : ----------Operation: Check that the suggestion list is displayed----------
+2019-Oct-29 14:01:24 [Test] INFO  : The element 'suggestion list' was visible. Screenshot taken: true
+2019-Oct-29 14:01:24 [Test] INFO  : ----------Operation successfully completed----------
+
+2019-Oct-29 14:01:24 [Test] INFO  : ----------Operation: Click on specific element of the suggestion list----------
+2019-Oct-29 14:01:25 [Test] INFO  : The element 'element '1' from suggestion list' was clicked. Screenshot taken: false
+2019-Oct-29 14:01:25 [Test] INFO  : ----------Operation successfully completed----------
+
+2019-Oct-29 14:01:25 [Test] INFO  : ----------Operation: Check the google results page----------
+2019-Oct-29 14:01:26 [Test] INFO  : The element 'all results option' was visible. Screenshot taken: true
+2019-Oct-29 14:01:26 [Test] INFO  : ----------Operation successfully completed----------
+
+2019-Oct-29 14:01:26 [Test] INFO  : ----------Operation: Click on the first search result----------
+2019-Oct-29 14:01:27 [Test] INFO  : The element 'first search result' was clicked. Screenshot taken: false
+2019-Oct-29 14:01:27 [Test] INFO  : ----------Operation successfully completed----------
+
+2019-Oct-29 14:01:27 [Test] INFO  : ----------Operation: Compare current url with the expected----------
+2019-Oct-29 14:01:27 [Test] INFO  : The browser url is 'https://en.wikipedia.org/wiki/The_Name_of_the_Wind'
+2019-Oct-29 14:01:27 [Test] INFO  : Driver closed
+2019-Oct-29 14:01:27 [Test] INFO  : Test end
+
+  @TechTest
+  Scenario: The user can seatch by using the suggestions  ?[90m# GoogleSearch.feature:22?[0m
+    ?[32mGiven ?[0m?[32mI’m on the homepage?[0m                             ?[90m# StepDefinition.ImOnTheHomepage()?[0m
+    ?[32mWhen ?[0m?[32mI type 'The name of the w' into the search field?[0m ?[90m# StepDefinition.iTypeTheNameOfTheWIntoTheSearchField()?[0m
+    ?[32mAnd ?[0m?[32mthe suggestions list is displayed?[0m                 ?[90m# StepDefinition.theSuggestionsListIsDisplayed()?[0m
+    ?[32mAnd ?[0m?[32mI click on the first suggestion in the list?[0m       ?[90m# StepDefinition.iClickOnTheFirstSuggestionInTheList()?[0m
+    ?[32mThen ?[0m?[32mI go to the search results page?[0m                  ?[90m# StepDefinition.iGoToTheSearchResultsPage()?[0m
+    ?[32mWhen ?[0m?[32mI click on the first result link?[0m                 ?[90m# StepDefinition.iClickOnTheFirstResultLink()?[0m
+    ?[31mThen ?[0m?[31mI go to the 'Patrick Rothfuss - The Books' page?[0m  ?[90m# StepDefinition.iGoToThePatrickRothfussTheBooksPage()?[0m
+      ?[31morg.junit.ComparisonFailure: the URL obtained was 'https://en.wikipedia.org/wiki/The_Name_of_the_Wind' but the expected is 'https://www.patrickrothfuss.com/content/books.asp'. expected:<https://[www.patrickrothfuss.com/content/books.asp]> but was:<https://[en.wikipedia.org/wiki/The_Name_of_the_Wind]>
+      	at org.junit.Assert.assertEquals(Assert.java:115)
+      	at com.google.googleTest.businessController.BusinessController.compareTabURL(BusinessController.java:152)
+      	at com.google.googleTest.steps.StepDefinition.iGoToThePatrickRothfussTheBooksPage(StepDefinition.java:86)
+      	at ✽.Then I go to the 'Patrick Rothfuss - The Books' page(GoogleSearch.feature:29)
+      ?[0m
+
+?[31mFailed scenarios:?[0m
+?[31mGoogleSearch.feature:4 ?[0m# Scenario: User can search with 'Google Search'
+?[31mGoogleSearch.feature:12 ?[0m# Scenario: User can search by using the suggestions
+?[31mGoogleSearch.feature:22 ?[0m# Scenario: The user can seatch by using the suggestions
+
+3 Scenarios (?[31m3 failed?[0m)
+18 Steps (?[31m3 failed?[0m, ?[32m15 passed?[0m)
+0m19,929s
+
+org.junit.ComparisonFailure: the result was 'The Name of the Wind - Wikipedia' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:<... Name of the Wind - [Wikipedia]> but was:<... Name of the Wind - [Patrick Rothfuss]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)
+	at com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)
+	at ✽.And the first result is 'The Name of the Wind - Patrick Rothfuss'(GoogleSearch.feature:9)
+
+org.junit.ComparisonFailure: the result was 'The Name of the Wind - Wikipedia' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:<... Name of the Wind - [Wikipedia]> but was:<... Name of the Wind - [Patrick Rothfuss]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)
+	at com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)
+	at ✽.And the first result is 'The Name of the Wind - Patrick Rothfuss'(GoogleSearch.feature:18)
+
+org.junit.ComparisonFailure: the URL obtained was 'https://en.wikipedia.org/wiki/The_Name_of_the_Wind' but the expected is 'https://www.patrickrothfuss.com/content/books.asp'. expected:<https://[www.patrickrothfuss.com/content/books.asp]> but was:<https://[en.wikipedia.org/wiki/The_Name_of_the_Wind]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at com.google.googleTest.businessController.BusinessController.compareTabURL(BusinessController.java:152)
+	at com.google.googleTest.steps.StepDefinition.iGoToThePatrickRothfussTheBooksPage(StepDefinition.java:86)
+	at ✽.Then I go to the 'Patrick Rothfuss - The Books' page(GoogleSearch.feature:29)
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

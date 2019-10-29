@@ -1,0 +1,345 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 419378051,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "User can search with \u0027Google Search\u0027",
+        "description": "",
+        "id": "google-homepage-search;user-can-search-with-\u0027google-search\u0027",
+        "after": [
+          {
+            "result": {
+              "duration": 134406318,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4275483691,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I’m on the homepage",
+            "match": {
+              "location": "StepDefinition.ImOnTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1081957392,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I type \u0027The name of the wind\u0027 into the search field",
+            "match": {
+              "location": "StepDefinition.iTypeTheNameOfTheWindIntoTheSearchField()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1641471873,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click the Google Search button",
+            "match": {
+              "location": "StepDefinition.iClickTheGoogleSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 322024498,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the search results page",
+            "match": {
+              "location": "StepDefinition.iGoToTheSearchResultsPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 53664351,
+              "error_message": "org.junit.ComparisonFailure: the result was \u0027The Name of the Wind - Wikipedia\u0027 but the expected is \u0027The Name of the Wind - Patrick Rothfuss\u0027. expected:\u003c... Name of the Wind - [Wikipedia]\u003e but was:\u003c... Name of the Wind - [Patrick Rothfuss]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)\n\tat com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)\n\tat ✽.And the first result is \u0027The Name of the Wind - Patrick Rothfuss\u0027(GoogleSearch.feature:9)\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "the first result is \u0027The Name of the Wind - Patrick Rothfuss\u0027",
+            "match": {
+              "location": "StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@TechTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7078082,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "User can search by using the suggestions",
+        "description": "",
+        "id": "google-homepage-search;user-can-search-by-using-the-suggestions",
+        "after": [
+          {
+            "result": {
+              "duration": 158752119,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2056938216,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I’m on the homepage",
+            "match": {
+              "location": "StepDefinition.ImOnTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 351953276,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I type \u0027The name of the w\u0027 into the search field",
+            "match": {
+              "location": "StepDefinition.iTypeTheNameOfTheWIntoTheSearchField()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 980799391,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the suggestions list is displayed",
+            "match": {
+              "location": "StepDefinition.theSuggestionsListIsDisplayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1445326489,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on the first suggestion in the list",
+            "match": {
+              "location": "StepDefinition.iClickOnTheFirstSuggestionInTheList()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 364397766,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I go to the search results page",
+            "match": {
+              "location": "StepDefinition.iGoToTheSearchResultsPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 38588739,
+              "error_message": "org.junit.ComparisonFailure: the result was \u0027The Name of the Wind - Wikipedia\u0027 but the expected is \u0027The Name of the Wind - Patrick Rothfuss\u0027. expected:\u003c... Name of the Wind - [Wikipedia]\u003e but was:\u003c... Name of the Wind - [Patrick Rothfuss]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)\n\tat com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)\n\tat ✽.And the first result is \u0027The Name of the Wind - Patrick Rothfuss\u0027(GoogleSearch.feature:18)\n",
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "the first result is \u0027The Name of the Wind - Patrick Rothfuss\u0027",
+            "match": {
+              "location": "StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@TechTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5018799,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "The user can seatch by using the suggestions",
+        "description": "",
+        "id": "google-homepage-search;the-user-can-seatch-by-using-the-suggestions",
+        "after": [
+          {
+            "result": {
+              "duration": 126762798,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2338876191,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I’m on the homepage",
+            "match": {
+              "location": "StepDefinition.ImOnTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 129910409,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I type \u0027The name of the w\u0027 into the search field",
+            "match": {
+              "location": "StepDefinition.iTypeTheNameOfTheWIntoTheSearchField()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 817387125,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the suggestions list is displayed",
+            "match": {
+              "location": "StepDefinition.theSuggestionsListIsDisplayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1438675145,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I click on the first suggestion in the list",
+            "match": {
+              "location": "StepDefinition.iClickOnTheFirstSuggestionInTheList()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 323975745,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I go to the search results page",
+            "match": {
+              "location": "StepDefinition.iGoToTheSearchResultsPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1096129836,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click on the first result link",
+            "match": {
+              "location": "StepDefinition.iClickOnTheFirstResultLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 319681555,
+              "error_message": "org.junit.ComparisonFailure: the URL obtained was \u0027https://en.wikipedia.org/wiki/The_Name_of_the_Wind\u0027 but the expected is \u0027https://www.patrickrothfuss.com/content/books.asp\u0027. expected:\u003chttps://[www.patrickrothfuss.com/content/books.asp]\u003e but was:\u003chttps://[en.wikipedia.org/wiki/The_Name_of_the_Wind]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat com.google.googleTest.businessController.BusinessController.compareTabURL(BusinessController.java:152)\n\tat com.google.googleTest.steps.StepDefinition.iGoToThePatrickRothfussTheBooksPage(StepDefinition.java:86)\n\tat ✽.Then I go to the \u0027Patrick Rothfuss - The Books\u0027 page(GoogleSearch.feature:29)\n",
+              "status": "failed"
+            },
+            "line": 29,
+            "name": "I go to the \u0027Patrick Rothfuss - The Books\u0027 page",
+            "match": {
+              "location": "StepDefinition.iGoToThePatrickRothfussTheBooksPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 21,
+            "name": "@TechTest"
+          }
+        ]
+      }
+    ],
+    "name": "Google Homepage Search",
+    "description": "",
+    "id": "google-homepage-search",
+    "keyword": "Feature",
+    "uri": "GoogleSearch.feature"
+  }
+]
