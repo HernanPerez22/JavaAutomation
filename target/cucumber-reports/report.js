@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 419378051,
+  "duration": 418487098,
   "status": "passed"
 });
 formatter.scenario({
@@ -53,44 +53,44 @@ formatter.match({
   "location": "StepDefinition.ImOnTheHomepage()"
 });
 formatter.result({
-  "duration": 4275483691,
+  "duration": 2281382821,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iTypeTheNameOfTheWindIntoTheSearchField()"
 });
 formatter.result({
-  "duration": 1081957392,
+  "duration": 957345051,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iClickTheGoogleSearchButton()"
 });
 formatter.result({
-  "duration": 1641471873,
+  "duration": 1878543556,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iGoToTheSearchResultsPage()"
 });
 formatter.result({
-  "duration": 322024498,
+  "duration": 210251471,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss()"
 });
 formatter.result({
-  "duration": 53664351,
-  "error_message": "org.junit.ComparisonFailure: the result was \u0027The Name of the Wind - Wikipedia\u0027 but the expected is \u0027The Name of the Wind - Patrick Rothfuss\u0027. expected:\u003c... Name of the Wind - [Wikipedia]\u003e but was:\u003c... Name of the Wind - [Patrick Rothfuss]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)\n\tat com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)\n\tat ✽.And the first result is \u0027The Name of the Wind - Patrick Rothfuss\u0027(GoogleSearch.feature:9)\n",
+  "duration": 38171684,
+  "error_message": "org.junit.ComparisonFailure: the result was \u0027El nombre del viento - Wikipedia, la enciclopedia libre\u0027 but the expected is \u0027The Name of the Wind - Patrick Rothfuss\u0027. expected:\u003c[El nombre del viento - Wikipedia, la enciclopedia libre]\u003e but was:\u003c[The Name of the Wind - Patrick Rothfuss]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)\n\tat com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)\n\tat ✽.And the first result is \u0027The Name of the Wind - Patrick Rothfuss\u0027(GoogleSearch.feature:9)\n",
   "status": "failed"
 });
 formatter.after({
-  "duration": 134406318,
+  "duration": 129007399,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7078082,
+  "duration": 4258223,
   "status": "passed"
 });
 formatter.scenario({
@@ -141,51 +141,51 @@ formatter.match({
   "location": "StepDefinition.ImOnTheHomepage()"
 });
 formatter.result({
-  "duration": 2056938216,
+  "duration": 2500340975,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iTypeTheNameOfTheWIntoTheSearchField()"
 });
 formatter.result({
-  "duration": 351953276,
+  "duration": 153183418,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.theSuggestionsListIsDisplayed()"
 });
 formatter.result({
-  "duration": 980799391,
+  "duration": 748920702,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iClickOnTheFirstSuggestionInTheList()"
 });
 formatter.result({
-  "duration": 1445326489,
+  "duration": 1879616820,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iGoToTheSearchResultsPage()"
 });
 formatter.result({
-  "duration": 364397766,
+  "duration": 209463705,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss()"
 });
 formatter.result({
-  "duration": 38588739,
-  "error_message": "org.junit.ComparisonFailure: the result was \u0027The Name of the Wind - Wikipedia\u0027 but the expected is \u0027The Name of the Wind - Patrick Rothfuss\u0027. expected:\u003c... Name of the Wind - [Wikipedia]\u003e but was:\u003c... Name of the Wind - [Patrick Rothfuss]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)\n\tat com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)\n\tat ✽.And the first result is \u0027The Name of the Wind - Patrick Rothfuss\u0027(GoogleSearch.feature:18)\n",
+  "duration": 30637819,
+  "error_message": "org.junit.ComparisonFailure: the result was \u0027El nombre del viento - Wikipedia, la enciclopedia libre\u0027 but the expected is \u0027The Name of the Wind - Patrick Rothfuss\u0027. expected:\u003c[El nombre del viento - Wikipedia, la enciclopedia libre]\u003e but was:\u003c[The Name of the Wind - Patrick Rothfuss]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)\n\tat com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)\n\tat ✽.And the first result is \u0027The Name of the Wind - Patrick Rothfuss\u0027(GoogleSearch.feature:18)\n",
   "status": "failed"
 });
 formatter.after({
-  "duration": 158752119,
+  "duration": 127564269,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5018799,
+  "duration": 7725795,
   "status": "passed"
 });
 formatter.scenario({
@@ -241,54 +241,54 @@ formatter.match({
   "location": "StepDefinition.ImOnTheHomepage()"
 });
 formatter.result({
-  "duration": 2338876191,
+  "duration": 2425174691,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iTypeTheNameOfTheWIntoTheSearchField()"
 });
 formatter.result({
-  "duration": 129910409,
+  "duration": 126647406,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.theSuggestionsListIsDisplayed()"
 });
 formatter.result({
-  "duration": 817387125,
+  "duration": 813599449,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iClickOnTheFirstSuggestionInTheList()"
 });
 formatter.result({
-  "duration": 1438675145,
+  "duration": 1016866256,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iGoToTheSearchResultsPage()"
 });
 formatter.result({
-  "duration": 323975745,
+  "duration": 385334725,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iClickOnTheFirstResultLink()"
 });
 formatter.result({
-  "duration": 1096129836,
+  "duration": 1083321262,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iGoToThePatrickRothfussTheBooksPage()"
 });
 formatter.result({
-  "duration": 319681555,
-  "error_message": "org.junit.ComparisonFailure: the URL obtained was \u0027https://en.wikipedia.org/wiki/The_Name_of_the_Wind\u0027 but the expected is \u0027https://www.patrickrothfuss.com/content/books.asp\u0027. expected:\u003chttps://[www.patrickrothfuss.com/content/books.asp]\u003e but was:\u003chttps://[en.wikipedia.org/wiki/The_Name_of_the_Wind]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat com.google.googleTest.businessController.BusinessController.compareTabURL(BusinessController.java:152)\n\tat com.google.googleTest.steps.StepDefinition.iGoToThePatrickRothfussTheBooksPage(StepDefinition.java:86)\n\tat ✽.Then I go to the \u0027Patrick Rothfuss - The Books\u0027 page(GoogleSearch.feature:29)\n",
+  "duration": 159669165,
+  "error_message": "org.junit.ComparisonFailure: the URL obtained was \u0027https://es.wikipedia.org/wiki/El_nombre_del_viento\u0027 but the expected is \u0027https://www.patrickrothfuss.com/content/books.asp\u0027. expected:\u003chttps://[www.patrickrothfuss.com/content/books.asp]\u003e but was:\u003chttps://[es.wikipedia.org/wiki/El_nombre_del_viento]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat com.google.googleTest.businessController.BusinessController.compareTabURL(BusinessController.java:152)\n\tat com.google.googleTest.steps.StepDefinition.iGoToThePatrickRothfussTheBooksPage(StepDefinition.java:86)\n\tat ✽.Then I go to the \u0027Patrick Rothfuss - The Books\u0027 page(GoogleSearch.feature:29)\n",
   "status": "failed"
 });
 formatter.after({
-  "duration": 126762798,
+  "duration": 106933947,
   "status": "passed"
 });
 });

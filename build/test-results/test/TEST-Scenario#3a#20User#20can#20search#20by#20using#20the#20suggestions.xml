@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Scenario: User can search by using the suggestions" tests="7" skipped="0" failures="2" errors="0" timestamp="2019-10-29T19:01:17" hostname="herniep" time="3.362">
+<testsuite name="Scenario: User can search by using the suggestions" tests="7" skipped="0" failures="2" errors="0" timestamp="2019-10-31T01:29:38" hostname="herniep" time="3.157">
   <properties/>
   <testcase name="Given I’m on the homepage" classname="Scenario: User can search by using the suggestions" time="0.0"/>
   <testcase name="When I type 'The name of the w' into the search field" classname="Scenario: User can search by using the suggestions" time="0.0"/>
@@ -7,24 +7,24 @@
   <testcase name="And I click on the first suggestion in the list" classname="Scenario: User can search by using the suggestions" time="0.0"/>
   <testcase name="Then I go to the search results page" classname="Scenario: User can search by using the suggestions" time="0.0"/>
   <testcase name="And the first result is 'The Name of the Wind - Patrick Rothfuss'" classname="Scenario: User can search by using the suggestions" time="0.0">
-    <failure message="org.junit.ComparisonFailure: the result was 'The Name of the Wind - Wikipedia' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;... Name of the Wind - [Wikipedia]&gt; but was:&lt;... Name of the Wind - [Patrick Rothfuss]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: the result was 'The Name of the Wind - Wikipedia' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;... Name of the Wind - [Wikipedia]&gt; but was:&lt;... Name of the Wind - [Patrick Rothfuss]&gt;
+    <failure message="org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;[El nombre del viento - Wikipedia, la enciclopedia libre]&gt; but was:&lt;[The Name of the Wind - Patrick Rothfuss]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;[El nombre del viento - Wikipedia, la enciclopedia libre]&gt; but was:&lt;[The Name of the Wind - Patrick Rothfuss]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)
 	at com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)
 	at ✽.And the first result is 'The Name of the Wind - Patrick Rothfuss'(GoogleSearch.feature:18)
 </failure>
   </testcase>
-  <testcase name="classMethod" classname="Scenario: User can search by using the suggestions" time="5.453">
-    <failure message="org.junit.ComparisonFailure: the result was 'The Name of the Wind - Wikipedia' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;... Name of the Wind - [Wikipedia]&gt; but was:&lt;... Name of the Wind - [Patrick Rothfuss]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: the result was 'The Name of the Wind - Wikipedia' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;... Name of the Wind - [Wikipedia]&gt; but was:&lt;... Name of the Wind - [Patrick Rothfuss]&gt;
+  <testcase name="classMethod" classname="Scenario: User can search by using the suggestions" time="5.673">
+    <failure message="org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;[El nombre del viento - Wikipedia, la enciclopedia libre]&gt; but was:&lt;[The Name of the Wind - Patrick Rothfuss]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;[El nombre del viento - Wikipedia, la enciclopedia libre]&gt; but was:&lt;[The Name of the Wind - Patrick Rothfuss]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)
 	at com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)
 	at ✽.And the first result is 'The Name of the Wind - Patrick Rothfuss'(GoogleSearch.feature:18)
 </failure>
   </testcase>
-  <system-out><![CDATA[2019-Oct-29 14:01:15 [Test] INFO  : Test start
-2019-Oct-29 14:01:15 [Test] INFO  : Scenario: User can search by using the suggestions
-2019-Oct-29 14:01:15 [Test] INFO  : Seature: Google homepage search
+  <system-out><![CDATA[2019-Oct-30 20:29:35 [Test] INFO  : Test start
+2019-Oct-30 20:29:35 [Test] INFO  : Scenario: User can search by using the suggestions
+2019-Oct-30 20:29:35 [Test] INFO  : Seature: Google homepage search
 
   @TechTest
   Scenario: User can search with 'Google Search'                      ?[90m# GoogleSearch.feature:4?[0m
@@ -33,22 +33,22 @@
     ?[32mAnd ?[0m?[32mI click the Google Search button?[0m                              ?[90m# StepDefinition.iClickTheGoogleSearchButton()?[0m
     ?[32mThen ?[0m?[32mI go to the search results page?[0m                              ?[90m# StepDefinition.iGoToTheSearchResultsPage()?[0m
     ?[31mAnd ?[0m?[31mthe first result is 'The Name of the Wind - Patrick Rothfuss'?[0m ?[90m# StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss()?[0m
-      ?[31morg.junit.ComparisonFailure: the result was 'The Name of the Wind - Wikipedia' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:<... Name of the Wind - [Wikipedia]> but was:<... Name of the Wind - [Patrick Rothfuss]>
+      ?[31morg.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:<[El nombre del viento - Wikipedia, la enciclopedia libre]> but was:<[The Name of the Wind - Patrick Rothfuss]>
       	at org.junit.Assert.assertEquals(Assert.java:115)
       	at com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)
       	at com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)
       	at ✽.And the first result is 'The Name of the Wind - Patrick Rothfuss'(GoogleSearch.feature:9)
       ?[0m
-2019-Oct-29 14:01:15 [Test] INFO  : ----------Operation: Go to google home page----------
-2019-Oct-29 14:01:17 [Test] INFO  : Driver selected: 'Chrome'. The browser opened the following url: 'http://www.google.com'.
-2019-Oct-29 14:01:17 [Test] INFO  : The element 'google search button' was visible. Screenshot taken: true
-2019-Oct-29 14:01:17 [Test] INFO  : ----------Operation successfully completed----------
+2019-Oct-30 20:29:35 [Test] INFO  :  Operation: Go to google home page
+2019-Oct-30 20:29:37 [Test] INFO  : Driver selected: 'Chrome'. The browser opened the following url: 'http://www.google.com'.
+2019-Oct-30 20:29:38 [Test] INFO  : The element 'google search button' was visible. Screenshot taken: true
+2019-Oct-30 20:29:38 [Test] INFO  : - Operation completed -
 
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}) on port 29119
+  <system-err><![CDATA[Starting ChromeDriver 78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}) on port 8812
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-Oct 29, 2019 2:01:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Oct 30, 2019 8:29:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

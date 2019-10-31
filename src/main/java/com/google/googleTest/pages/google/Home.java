@@ -7,7 +7,7 @@ import java.util.List;
 
 import static com.google.googleTest.businessController.BusinessController.webActions;
 
-public class GoogleHome {
+public class Home {
 
     @FindBy(how = How.NAME, using = "q")
     private WebElement inputSearchField;
@@ -30,7 +30,7 @@ public class GoogleHome {
     @FindBy(how = How.XPATH, using = "//ul[@role='listbox']/li")
     private List<WebElement> ulSearchSuggestionElements;
 
-    public GoogleHome() {
+    public Home() {
     }
 
     public void typeSearch(String textToSearch) throws Exception{

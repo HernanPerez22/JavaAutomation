@@ -9,7 +9,7 @@ import java.util.List;
 import static com.google.googleTest.businessController.BusinessController.webActions;
 
 
-public class GoogleResults {
+public class Results {
     @FindBy(how = How.XPATH, using = "//div[@id='search']//h3")
     private List<WebElement> lnkResults;
 

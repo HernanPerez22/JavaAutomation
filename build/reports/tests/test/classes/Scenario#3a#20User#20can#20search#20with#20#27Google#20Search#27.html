@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">8.183s</div>
+<div class="counter">6.032s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 <a name="And the first result is 'The Name of the Wind - Patrick Rothfuss'"></a>
 <h3 class="failures">And the first result is 'The Name of the Wind - Patrick Rothfuss'</h3>
 <span class="code">
-<pre>org.junit.ComparisonFailure: the result was 'The Name of the Wind - Wikipedia' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;... Name of the Wind - [Wikipedia]&gt; but was:&lt;... Name of the Wind - [Patrick Rothfuss]&gt;
+<pre>org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;[El nombre del viento - Wikipedia, la enciclopedia libre]&gt; but was:&lt;[The Name of the Wind - Patrick Rothfuss]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)
 	at com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)
@@ -91,7 +91,7 @@
 <a name="classMethod"></a>
 <h3 class="failures">classMethod</h3>
 <span class="code">
-<pre>org.junit.ComparisonFailure: the result was 'The Name of the Wind - Wikipedia' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;... Name of the Wind - [Wikipedia]&gt; but was:&lt;... Name of the Wind - [Patrick Rothfuss]&gt;
+<pre>org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;[El nombre del viento - Wikipedia, la enciclopedia libre]&gt; but was:&lt;[The Name of the Wind - Patrick Rothfuss]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)
 	at com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)
@@ -122,7 +122,7 @@
 </tr>
 <tr>
 <td class="success">Given I’m on the homepage</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -137,7 +137,7 @@
 </tr>
 <tr>
 <td class="failures">classMethod</td>
-<td class="failures">8.181s</td>
+<td class="failures">6.029s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -145,13 +145,13 @@
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2019-Oct-29 14:01:08 [Test] INFO  : Test start
-2019-Oct-29 14:01:08 [Test] INFO  : Scenario: User can search with 'Google Search'
-2019-Oct-29 14:01:08 [Test] INFO  : Seature: Google homepage search
-2019-Oct-29 14:01:08 [Test] INFO  : ----------Operation: Go to google home page----------
-2019-Oct-29 14:01:11 [Test] INFO  : Driver selected: 'Chrome'. The browser opened the following url: 'http://www.google.com'.
-2019-Oct-29 14:01:12 [Test] INFO  : The element 'google search button' was visible. Screenshot taken: true
-2019-Oct-29 14:01:12 [Test] INFO  : ----------Operation successfully completed----------
+<pre>2019-Oct-30 20:29:30 [Test] INFO  : Test start
+2019-Oct-30 20:29:30 [Test] INFO  : Scenario: User can search with 'Google Search'
+2019-Oct-30 20:29:30 [Test] INFO  : Seature: Google homepage search
+2019-Oct-30 20:29:30 [Test] INFO  :  Operation: Go to google home page
+2019-Oct-30 20:29:32 [Test] INFO  : Driver selected: 'Chrome'. The browser opened the following url: 'http://www.google.com'.
+2019-Oct-30 20:29:32 [Test] INFO  : The element 'google search button' was visible. Screenshot taken: true
+2019-Oct-30 20:29:32 [Test] INFO  : - Operation completed -
 
 </pre>
 </span>
@@ -160,10 +160,10 @@
 <h2>Standard error</h2>
 <span class="code">
 <pre>ERROR StatusLogger No Log4j 2 configuration file found. Using default configuration (logging only errors to the console), or user programmatically provided configurations. Set system property 'log4j2.debug' to show Log4j 2 internal initialization logging. See https://logging.apache.org/log4j/2.x/manual/configuration.html for instructions on how to configure Log4j 2
-Starting ChromeDriver 78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}) on port 32353
+Starting ChromeDriver 78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}) on port 18102
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-Oct 29, 2019 2:01:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Oct 30, 2019 8:29:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </pre>
 </span>
@@ -176,7 +176,7 @@ INFO: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.8</a> at 29/10/2019 02:01:28 PM</p>
+<a href="http://www.gradle.org">Gradle 4.8</a> at 30/10/2019 08:29:48 PM</p>
 </div>
 </div>
 </body>
