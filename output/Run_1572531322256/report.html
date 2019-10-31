@@ -48,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Oct 28, 2019 04:11:32 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Oct 31, 2019 09:15:22 AM</span>
 				</a>
 			</li>
 			<li>
@@ -75,7 +75,6 @@
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -88,7 +87,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@GoogleSearch</a></li>
+					<li><a href='#'>@TechTest</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -154,7 +153,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>2</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>3</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -166,10 +165,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='60%'><span class='strong'>9</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='83.333%'><span class='strong'>15</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='13.333%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='26.667%'>4</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -186,15 +185,15 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Google Homepage Search</span>
-						<span class='test-time'>Oct 28, 2019 04:11:32 PM</span>
+						<span class='test-time'>Oct 31, 2019 09:15:22 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='fail'>
 	<div class='category-list'>
-		<span class='category label white-text'>@GoogleSearch</span>
+		<span class='category label white-text'>@TechTest</span>
 	</div>
-	<span class='duration right label'>0h 0m 5s+414ms</span>
+	<span class='duration right label'>0h 0m 8s+501ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">User can search with 'Google Search'</span>
@@ -237,38 +236,22 @@
 			<b>And</b>
 			
 			<span class="bdd-step-name">And the first result is 'The Name of the Wind - Patrick Rothfuss'</span>
-				<div class='pre'><textarea>org.junit.ComparisonFailure: the result was 'The Name of the Wind - Wikipedia' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:</textarea></div>
-			
-		</li>
-		<li test-id='8' class='node when skip' status='skip'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When I click on the first result link</span>
-				<div class='pre'>skipped</div>
-			
-		</li>
-		<li test-id='9' class='node then skip' status='skip'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then I go to the 'Patrick Rothfuss - The Books' page</span>
-				<div class='pre'>skipped</div>
+				<div class='pre'><textarea>org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:</textarea></div>
 			
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='10' status='fail'>
+<div class='scenario node' test-id='8' status='fail'>
 	<div class='category-list'>
-		<span class='category label white-text'>@GoogleSearch</span>
+		<span class='category label white-text'>@TechTest</span>
 	</div>
-	<span class='duration right label'>0h 0m 5s+798ms</span>
+	<span class='duration right label'>0h 0m 5s+823ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">User can search by using the suggestions</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='11' class='node given pass' status='pass'>
+		<li test-id='9' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -276,7 +259,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='12' class='node when pass' status='pass'>
+		<li test-id='10' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -284,7 +267,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='13' class='node and pass' status='pass'>
+		<li test-id='11' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -292,7 +275,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='14' class='node and pass' status='pass'>
+		<li test-id='12' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -300,7 +283,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='15' class='node then pass' status='pass'>
+		<li test-id='13' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -308,28 +291,85 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='16' class='node and fail' status='fail'>
+		<li test-id='14' class='node and fail' status='fail'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And the first result is 'The Name of the Wind - Patrick Rothfuss'</span>
-				<div class='pre'><textarea>org.junit.ComparisonFailure: the result was 'The Name of the Wind - Wikipedia' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:</textarea></div>
+				<div class='pre'><textarea>org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:</textarea></div>
 			
 		</li>
-		<li test-id='17' class='node when skip' status='skip'>
+	</ul>
+</div>
+<div class='scenario node' test-id='15' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@TechTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 6s+951ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">The user can seatch by using the suggestions</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='16' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given I’m on the homepage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='17' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When I type 'The name of the w' into the search field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='18' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And the suggestions list is displayed</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='19' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And I click on the first suggestion in the list</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='20' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then I go to the search results page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='21' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When I click on the first result link</span>
-				<div class='pre'>skipped</div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='18' class='node then skip' status='skip'>
+		<li test-id='22' class='node then fail' status='fail'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then I go to the 'Patrick Rothfuss - The Books' page</span>
-				<div class='pre'>skipped</div>
+				<div class='pre'><textarea>org.junit.ComparisonFailure: the URL obtained was 'https://es.wikipedia.org/wiki/El_nombre_del_viento' but the expected is 'https://www.patrickrothfuss.com/content/books.asp'. expected:<https://[www.patrickrothfuss.com/content/books.asp]> but was:<https://[es.wikipedia.org/wiki/El_nombre_del_viento]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at com.google.googleTest.controllers.BusinessController.compareTabURL(BusinessController.java:152)
+	at com.google.googleTest.steps.StepDefinition.iGoToThePatrickRothfussTheBooksPage(StepDefinition.java:86)
+	at ✽.Then I go to the 'Patrick Rothfuss - The Books' page(GoogleSearch.feature:29)
+</textarea></div>
 			
 		</li>
 	</ul>
@@ -388,15 +428,15 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@GoogleSearch</span>
+						<span class='category-name'>@TechTest</span>
 						<span class='category-status right'>
-							<span class='label fail'>2</span>
+							<span class='label fail'>3</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							
-							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							<span class='label red lighten-1 white-text'>Failed: 3</span>
 							
 						</div>
 					
@@ -411,13 +451,18 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 28, 2019 04:11:32 PM</td>
+										<td>Oct 31, 2019 09:15:22 AM</td>
 										<td class='linked' test-id='2'>Google Homepage Search.User can search with 'Google Search'</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Oct 28, 2019 04:11:37 PM</td>
-										<td class='linked' test-id='10'>Google Homepage Search.User can search by using the suggestions</td>
+										<td>Oct 31, 2019 09:15:31 AM</td>
+										<td class='linked' test-id='8'>Google Homepage Search.User can search by using the suggestions</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2019 09:15:37 AM</td>
+										<td class='linked' test-id='15'>Google Homepage Search.The user can seatch by using the suggestions</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
@@ -465,7 +510,7 @@
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
                                 <span class='exception-name'>org.junit.ComparisonFailure</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>3</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -479,14 +524,24 @@
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Oct 28, 2019 04:11:37 PM</td>
+                                                        <td>Oct 31, 2019 09:15:31 AM</td>
                                                         <td class='linked' test-id='7'>Google Homepage Search.User can search with 'Google Search'.And the first result is 'The Name of the Wind - Patrick Rothfuss'</td>
-                                                        <td><pre><textarea>org.junit.ComparisonFailure: the result was 'The Name of the Wind - Wikipedia' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:</textarea></pre></td>
+                                                        <td><pre><textarea>org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:</textarea></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Oct 28, 2019 04:11:43 PM</td>
-                                                        <td class='linked' test-id='16'>Google Homepage Search.User can search by using the suggestions.And the first result is 'The Name of the Wind - Patrick Rothfuss'</td>
-                                                        <td><pre><textarea>org.junit.ComparisonFailure: the result was 'The Name of the Wind - Wikipedia' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:</textarea></pre></td>
+                                                        <td>Oct 31, 2019 09:15:36 AM</td>
+                                                        <td class='linked' test-id='14'>Google Homepage Search.User can search by using the suggestions.And the first result is 'The Name of the Wind - Patrick Rothfuss'</td>
+                                                        <td><pre><textarea>org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Oct 31, 2019 09:15:43 AM</td>
+                                                        <td class='linked' test-id='22'>Google Homepage Search.The user can seatch by using the suggestions.Then I go to the 'Patrick Rothfuss - The Books' page</td>
+                                                        <td><pre><textarea>org.junit.ComparisonFailure: the URL obtained was 'https://es.wikipedia.org/wiki/El_nombre_del_viento' but the expected is 'https://www.patrickrothfuss.com/content/books.asp'. expected:<https://[www.patrickrothfuss.com/content/books.asp]> but was:<https://[es.wikipedia.org/wiki/El_nombre_del_viento]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at com.google.googleTest.controllers.BusinessController.compareTabURL(BusinessController.java:152)
+	at com.google.googleTest.steps.StepDefinition.iGoToThePatrickRothfussTheBooksPage(StepDefinition.java:86)
+	at ✽.Then I go to the 'Patrick Rothfuss - The Books' page(GoogleSearch.feature:29)
+</textarea></pre></td>
                                                     </tr>
                                         </tbody>
                                     </table>
@@ -518,31 +573,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>15</div>
+					<div class='panel-lead'>18</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 28, 2019 04:11:32 PM</div>
+					<div class='panel-lead'>Oct 31, 2019 09:15:22 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 28, 2019 04:11:43 PM</div>
+			 		<div class='panel-lead'>Oct 31, 2019 09:15:44 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>11,634ms</div>
+					<div class='panel-lead'>22,119ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -558,9 +613,9 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@GoogleSearch</td>
+							<td>@TechTest</td>
 							<td>0</td>
-							<td>2</td>
+							<td>3</td>
 							<td>0</td>
 							<td>
 									0%
@@ -588,22 +643,22 @@
 				exceptionsParent: 1,
 				
 				passChild: 0,
-				failChild: 2,
+				failChild: 3,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 2,
+				exceptionsChild: 3,
 				
-				passGrandChild: 9,
-				failGrandChild: 2,
+				passGrandChild: 15,
+				failGrandChild: 3,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 4,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 6,
+				exceptionsGrandChild: 3,
 			};
 		</script>
 		

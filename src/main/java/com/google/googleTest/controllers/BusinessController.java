@@ -1,9 +1,8 @@
-package com.google.googleTest.businessController;
+package com.google.googleTest.controllers;
 
 import com.google.googleTest.logs.Log;
 import com.google.googleTest.pages.google.Home;
 import com.google.googleTest.pages.google.Results;
-import com.google.googleTest.webActions.WebActions;
 import org.junit.Assert;
 import org.openqa.selenium.support.PageFactory;
 

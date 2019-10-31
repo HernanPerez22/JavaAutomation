@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Scenario: User can search by using the suggestions" tests="7" skipped="0" failures="2" errors="0" timestamp="2019-10-31T01:29:38" hostname="herniep" time="3.157">
+<testsuite name="Scenario: User can search by using the suggestions" tests="7" skipped="0" failures="2" errors="0" timestamp="2019-10-31T14:15:33" hostname="herniep" time="3.265">
   <properties/>
   <testcase name="Given I’m on the homepage" classname="Scenario: User can search by using the suggestions" time="0.0"/>
   <testcase name="When I type 'The name of the w' into the search field" classname="Scenario: User can search by using the suggestions" time="0.0"/>
@@ -14,7 +14,7 @@
 	at ✽.And the first result is 'The Name of the Wind - Patrick Rothfuss'(GoogleSearch.feature:18)
 </failure>
   </testcase>
-  <testcase name="classMethod" classname="Scenario: User can search by using the suggestions" time="5.673">
+  <testcase name="classMethod" classname="Scenario: User can search by using the suggestions" time="5.96">
     <failure message="org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;[El nombre del viento - Wikipedia, la enciclopedia libre]&gt; but was:&lt;[The Name of the Wind - Patrick Rothfuss]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;[El nombre del viento - Wikipedia, la enciclopedia libre]&gt; but was:&lt;[The Name of the Wind - Patrick Rothfuss]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)
@@ -22,9 +22,9 @@
 	at ✽.And the first result is 'The Name of the Wind - Patrick Rothfuss'(GoogleSearch.feature:18)
 </failure>
   </testcase>
-  <system-out><![CDATA[2019-Oct-30 20:29:35 [Test] INFO  : Test start
-2019-Oct-30 20:29:35 [Test] INFO  : Scenario: User can search by using the suggestions
-2019-Oct-30 20:29:35 [Test] INFO  : Seature: Google homepage search
+  <system-out><![CDATA[2019-Oct-31 09:15:31 [Test] INFO  : Test start
+2019-Oct-31 09:15:31 [Test] INFO  : Scenario: User can search by using the suggestions
+2019-Oct-31 09:15:31 [Test] INFO  : Seature: Google homepage search
 
   @TechTest
   Scenario: User can search with 'Google Search'                      ?[90m# GoogleSearch.feature:4?[0m
@@ -39,16 +39,16 @@
       	at com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)
       	at ✽.And the first result is 'The Name of the Wind - Patrick Rothfuss'(GoogleSearch.feature:9)
       ?[0m
-2019-Oct-30 20:29:35 [Test] INFO  :  Operation: Go to google home page
-2019-Oct-30 20:29:37 [Test] INFO  : Driver selected: 'Chrome'. The browser opened the following url: 'http://www.google.com'.
-2019-Oct-30 20:29:38 [Test] INFO  : The element 'google search button' was visible. Screenshot taken: true
-2019-Oct-30 20:29:38 [Test] INFO  : - Operation completed -
+2019-Oct-31 09:15:31 [Test] INFO  :  Operation: Go to google home page
+2019-Oct-31 09:15:33 [Test] INFO  : Driver selected: 'Chrome'. The browser opened the following url: 'http://www.google.com'.
+2019-Oct-31 09:15:33 [Test] INFO  : The element 'google search button' was visible. Screenshot taken: true
+2019-Oct-31 09:15:33 [Test] INFO  : - Operation completed -
 
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}) on port 8812
+  <system-err><![CDATA[Starting ChromeDriver 78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}) on port 5379
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-Oct 30, 2019 8:29:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Oct 31, 2019 9:15:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

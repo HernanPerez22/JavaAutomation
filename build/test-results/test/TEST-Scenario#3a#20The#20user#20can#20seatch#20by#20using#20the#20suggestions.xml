@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Scenario: The user can seatch by using the suggestions" tests="8" skipped="0" failures="2" errors="0" timestamp="2019-10-31T01:29:43" hostname="herniep" time="3.703">
+<testsuite name="Scenario: The user can seatch by using the suggestions" tests="8" skipped="0" failures="2" errors="0" timestamp="2019-10-31T14:15:40" hostname="herniep" time="4.246">
   <properties/>
   <testcase name="Given I’m on the homepage" classname="Scenario: The user can seatch by using the suggestions" time="0.0"/>
-  <testcase name="When I type 'The name of the w' into the search field" classname="Scenario: The user can seatch by using the suggestions" time="0.001"/>
-  <testcase name="And the suggestions list is displayed" classname="Scenario: The user can seatch by using the suggestions" time="0.0"/>
+  <testcase name="When I type 'The name of the w' into the search field" classname="Scenario: The user can seatch by using the suggestions" time="0.004"/>
+  <testcase name="And the suggestions list is displayed" classname="Scenario: The user can seatch by using the suggestions" time="0.002"/>
   <testcase name="And I click on the first suggestion in the list" classname="Scenario: The user can seatch by using the suggestions" time="0.0"/>
   <testcase name="Then I go to the search results page" classname="Scenario: The user can seatch by using the suggestions" time="0.0"/>
   <testcase name="When I click on the first result link" classname="Scenario: The user can seatch by using the suggestions" time="0.0"/>
@@ -15,7 +15,7 @@
 	at ✽.Then I go to the 'Patrick Rothfuss - The Books' page(GoogleSearch.feature:29)
 </failure>
   </testcase>
-  <testcase name="classMethod" classname="Scenario: The user can seatch by using the suggestions" time="6.142">
+  <testcase name="classMethod" classname="Scenario: The user can seatch by using the suggestions" time="7.084">
     <failure message="org.junit.ComparisonFailure: the URL obtained was 'https://es.wikipedia.org/wiki/El_nombre_del_viento' but the expected is 'https://www.patrickrothfuss.com/content/books.asp'. expected:&lt;https://[www.patrickrothfuss.com/content/books.asp]&gt; but was:&lt;https://[es.wikipedia.org/wiki/El_nombre_del_viento]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: the URL obtained was 'https://es.wikipedia.org/wiki/El_nombre_del_viento' but the expected is 'https://www.patrickrothfuss.com/content/books.asp'. expected:&lt;https://[www.patrickrothfuss.com/content/books.asp]&gt; but was:&lt;https://[es.wikipedia.org/wiki/El_nombre_del_viento]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at com.google.googleTest.businessController.BusinessController.compareTabURL(BusinessController.java:152)
@@ -23,9 +23,9 @@
 	at ✽.Then I go to the 'Patrick Rothfuss - The Books' page(GoogleSearch.feature:29)
 </failure>
   </testcase>
-  <system-out><![CDATA[2019-Oct-30 20:29:41 [Test] INFO  : Test start
-2019-Oct-30 20:29:41 [Test] INFO  : Scenario: The user can seatch by using the suggestions
-2019-Oct-30 20:29:41 [Test] INFO  : Seature: Google homepage search
+  <system-out><![CDATA[2019-Oct-31 09:15:37 [Test] INFO  : Test start
+2019-Oct-31 09:15:37 [Test] INFO  : Scenario: The user can seatch by using the suggestions
+2019-Oct-31 09:15:37 [Test] INFO  : Seature: Google homepage search
 
   @TechTest
   Scenario: User can search by using the suggestions                  ?[90m# GoogleSearch.feature:12?[0m
@@ -41,16 +41,16 @@
       	at com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)
       	at ✽.And the first result is 'The Name of the Wind - Patrick Rothfuss'(GoogleSearch.feature:18)
       ?[0m
-2019-Oct-30 20:29:41 [Test] INFO  :  Operation: Go to google home page
-2019-Oct-30 20:29:43 [Test] INFO  : Driver selected: 'Chrome'. The browser opened the following url: 'http://www.google.com'.
-2019-Oct-30 20:29:43 [Test] INFO  : The element 'google search button' was visible. Screenshot taken: true
-2019-Oct-30 20:29:43 [Test] INFO  : - Operation completed -
+2019-Oct-31 09:15:37 [Test] INFO  :  Operation: Go to google home page
+2019-Oct-31 09:15:39 [Test] INFO  : Driver selected: 'Chrome'. The browser opened the following url: 'http://www.google.com'.
+2019-Oct-31 09:15:40 [Test] INFO  : The element 'google search button' was visible. Screenshot taken: true
+2019-Oct-31 09:15:40 [Test] INFO  : - Operation completed -
 
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}) on port 19623
+  <system-err><![CDATA[Starting ChromeDriver 78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}) on port 30541
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-Oct 30, 2019 8:29:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Oct 31, 2019 9:15:38 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

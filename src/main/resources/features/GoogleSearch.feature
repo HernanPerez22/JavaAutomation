@@ -1,4 +1,4 @@
-Feature: Google Homepage Search
+Feature: Search in google home page
 
   @TechTest
   Scenario: User can search with 'Google Search'
