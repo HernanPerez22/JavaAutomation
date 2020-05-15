@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 484961564,
+              "duration": 394953000,
               "status": "passed"
             },
             "match": {
@@ -17,11 +17,11 @@
         "line": 4,
         "name": "User can search with \u0027Google Search\u0027",
         "description": "",
-        "id": "google-homepage-search;user-can-search-with-\u0027google-search\u0027",
+        "id": "search-in-google-home-page;user-can-search-with-\u0027google-search\u0027",
         "after": [
           {
             "result": {
-              "duration": 152313850,
+              "duration": 5349700,
               "status": "passed"
             },
             "match": {
@@ -34,20 +34,16 @@
         "steps": [
           {
             "result": {
-              "duration": 4075341806,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 5,
             "name": "I’m on the homepage",
-            "match": {
-              "location": "StepDefinition.ImOnTheHomepage()"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1242359037,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "I type \u0027The name of the wind\u0027 into the search field",
@@ -58,8 +54,7 @@
           },
           {
             "result": {
-              "duration": 2212216313,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "I click the Google Search button",
@@ -70,8 +65,7 @@
           },
           {
             "result": {
-              "duration": 347165595,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "I go to the search results page",
@@ -82,9 +76,7 @@
           },
           {
             "result": {
-              "duration": 39759998,
-              "error_message": "org.junit.ComparisonFailure: the result was \u0027El nombre del viento - Wikipedia, la enciclopedia libre\u0027 but the expected is \u0027The Name of the Wind - Patrick Rothfuss\u0027. expected:\u003c[El nombre del viento - Wikipedia, la enciclopedia libre]\u003e but was:\u003c[The Name of the Wind - Patrick Rothfuss]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)\n\tat com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)\n\tat ✽.And the first result is \u0027The Name of the Wind - Patrick Rothfuss\u0027(GoogleSearch.feature:9)\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "the first result is \u0027The Name of the Wind - Patrick Rothfuss\u0027",
@@ -105,7 +97,7 @@
         "before": [
           {
             "result": {
-              "duration": 4373761,
+              "duration": 4902900,
               "status": "passed"
             },
             "match": {
@@ -116,11 +108,11 @@
         "line": 12,
         "name": "User can search by using the suggestions",
         "description": "",
-        "id": "google-homepage-search;user-can-search-by-using-the-suggestions",
+        "id": "search-in-google-home-page;user-can-search-by-using-the-suggestions",
         "after": [
           {
             "result": {
-              "duration": 134259167,
+              "duration": 2875700,
               "status": "passed"
             },
             "match": {
@@ -133,20 +125,16 @@
         "steps": [
           {
             "result": {
-              "duration": 2653703753,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 13,
             "name": "I’m on the homepage",
-            "match": {
-              "location": "StepDefinition.ImOnTheHomepage()"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 332302723,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "I type \u0027The name of the w\u0027 into the search field",
@@ -157,8 +145,7 @@
           },
           {
             "result": {
-              "duration": 452348200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "the suggestions list is displayed",
@@ -169,8 +156,7 @@
           },
           {
             "result": {
-              "duration": 1815329834,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 16,
             "name": "I click on the first suggestion in the list",
@@ -181,8 +167,7 @@
           },
           {
             "result": {
-              "duration": 440710972,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 17,
             "name": "I go to the search results page",
@@ -193,9 +178,7 @@
           },
           {
             "result": {
-              "duration": 68223060,
-              "error_message": "org.junit.ComparisonFailure: the result was \u0027El nombre del viento - Wikipedia, la enciclopedia libre\u0027 but the expected is \u0027The Name of the Wind - Patrick Rothfuss\u0027. expected:\u003c[El nombre del viento - Wikipedia, la enciclopedia libre]\u003e but was:\u003c[The Name of the Wind - Patrick Rothfuss]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)\n\tat com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)\n\tat ✽.And the first result is \u0027The Name of the Wind - Patrick Rothfuss\u0027(GoogleSearch.feature:18)\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 18,
             "name": "the first result is \u0027The Name of the Wind - Patrick Rothfuss\u0027",
@@ -216,7 +199,7 @@
         "before": [
           {
             "result": {
-              "duration": 3113681,
+              "duration": 6838600,
               "status": "passed"
             },
             "match": {
@@ -227,11 +210,11 @@
         "line": 22,
         "name": "The user can seatch by using the suggestions",
         "description": "",
-        "id": "google-homepage-search;the-user-can-seatch-by-using-the-suggestions",
+        "id": "search-in-google-home-page;the-user-can-seatch-by-using-the-suggestions",
         "after": [
           {
             "result": {
-              "duration": 131372377,
+              "duration": 4401400,
               "status": "passed"
             },
             "match": {
@@ -244,20 +227,16 @@
         "steps": [
           {
             "result": {
-              "duration": 2824168674,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 23,
             "name": "I’m on the homepage",
-            "match": {
-              "location": "StepDefinition.ImOnTheHomepage()"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 219840163,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 24,
             "name": "I type \u0027The name of the w\u0027 into the search field",
@@ -268,8 +247,7 @@
           },
           {
             "result": {
-              "duration": 824476866,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 25,
             "name": "the suggestions list is displayed",
@@ -280,8 +258,7 @@
           },
           {
             "result": {
-              "duration": 1478404423,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 26,
             "name": "I click on the first suggestion in the list",
@@ -292,8 +269,7 @@
           },
           {
             "result": {
-              "duration": 335398545,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 27,
             "name": "I go to the search results page",
@@ -304,8 +280,7 @@
           },
           {
             "result": {
-              "duration": 873204143,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 28,
             "name": "I click on the first result link",
@@ -316,9 +291,7 @@
           },
           {
             "result": {
-              "duration": 361168758,
-              "error_message": "org.junit.ComparisonFailure: the URL obtained was \u0027https://es.wikipedia.org/wiki/El_nombre_del_viento\u0027 but the expected is \u0027https://www.patrickrothfuss.com/content/books.asp\u0027. expected:\u003chttps://[www.patrickrothfuss.com/content/books.asp]\u003e but was:\u003chttps://[es.wikipedia.org/wiki/El_nombre_del_viento]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat com.google.googleTest.businessController.BusinessController.compareTabURL(BusinessController.java:152)\n\tat com.google.googleTest.steps.StepDefinition.iGoToThePatrickRothfussTheBooksPage(StepDefinition.java:86)\n\tat ✽.Then I go to the \u0027Patrick Rothfuss - The Books\u0027 page(GoogleSearch.feature:29)\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 29,
             "name": "I go to the \u0027Patrick Rothfuss - The Books\u0027 page",
@@ -336,9 +309,9 @@
         ]
       }
     ],
-    "name": "Google Homepage Search",
+    "name": "Search in google home page",
     "description": "",
-    "id": "google-homepage-search",
+    "id": "search-in-google-home-page",
     "keyword": "Feature",
     "uri": "GoogleSearch.feature"
   }

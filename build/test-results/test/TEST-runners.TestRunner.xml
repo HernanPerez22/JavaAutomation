@@ -1,113 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="runners.TestRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="herniep" time="0.0">
+<testsuite name="runners.TestRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-GM3SB35" time="0.0">
   <properties/>
-  <system-out><![CDATA[Feature: Google Homepage Search
-2019-Oct-31 09:15:27 [Test] INFO  :  Operation: Type in the google search field
-2019-Oct-31 09:15:27 [Test] INFO  : In the element 'google search field' was written the string 'The name of the wind'. Screenshot taken: false
-2019-Oct-31 09:15:28 [Test] INFO  : The element 'suggestion list' is visible. Screenshot taken: true
-2019-Oct-31 09:15:28 [Test] INFO  : The element 'google logo' was clicked. Screenshot taken: false
-2019-Oct-31 09:15:28 [Test] INFO  : - Operation completed -
-
-2019-Oct-31 09:15:28 [Test] INFO  :  Operation: Click on the google search button
-2019-Oct-31 09:15:30 [Test] INFO  : The element 'google search button' was clicked. Screenshot taken: false
-2019-Oct-31 09:15:30 [Test] INFO  : - Operation completed -
-
-2019-Oct-31 09:15:30 [Test] INFO  :  Operation: Check the google results page
-2019-Oct-31 09:15:31 [Test] INFO  : The element 'all results option' was visible. Screenshot taken: true
-2019-Oct-31 09:15:31 [Test] INFO  : - Operation completed -
-
-2019-Oct-31 09:15:31 [Test] INFO  :  Operation: Check the first google result
-2019-Oct-31 09:15:31 [Test] INFO  : The element 'first search result' has the text 'El nombre del viento - Wikipedia, la enciclopedia libre'. Screenshot taken: false
-2019-Oct-31 09:15:31 [Test] INFO  : Driver closed
-2019-Oct-31 09:15:31 [Test] INFO  : Test end
-2019-Oct-31 09:15:33 [Test] INFO  :  Operation: Type in the google search field
-2019-Oct-31 09:15:34 [Test] INFO  : In the element 'google search field' was written the string 'The Name of the w'. Screenshot taken: false
-2019-Oct-31 09:15:34 [Test] INFO  : - Operation completed -
-
-2019-Oct-31 09:15:34 [Test] INFO  :  Operation: Check that the suggestion list is displayed
-2019-Oct-31 09:15:34 [Test] INFO  : The element 'suggestion list' was visible. Screenshot taken: true
-2019-Oct-31 09:15:34 [Test] INFO  : - Operation completed -
-
-2019-Oct-31 09:15:34 [Test] INFO  :  Operation: Click on specific element of the suggestion list
-2019-Oct-31 09:15:36 [Test] INFO  : The element 'element '1' from suggestion list' was clicked. Screenshot taken: false
-2019-Oct-31 09:15:36 [Test] INFO  : - Operation completed -
-
-2019-Oct-31 09:15:36 [Test] INFO  :  Operation: Check the google results page
-2019-Oct-31 09:15:36 [Test] INFO  : The element 'all results option' was visible. Screenshot taken: true
-2019-Oct-31 09:15:36 [Test] INFO  : - Operation completed -
-
-2019-Oct-31 09:15:36 [Test] INFO  :  Operation: Check the first google result
-2019-Oct-31 09:15:37 [Test] INFO  : The element 'first search result' has the text 'El nombre del viento - Wikipedia, la enciclopedia libre'. Screenshot taken: false
-2019-Oct-31 09:15:37 [Test] INFO  : Driver closed
-2019-Oct-31 09:15:37 [Test] INFO  : Test end
-2019-Oct-31 09:15:40 [Test] INFO  :  Operation: Type in the google search field
-2019-Oct-31 09:15:40 [Test] INFO  : In the element 'google search field' was written the string 'The Name of the w'. Screenshot taken: false
-2019-Oct-31 09:15:40 [Test] INFO  : - Operation completed -
-
-2019-Oct-31 09:15:40 [Test] INFO  :  Operation: Check that the suggestion list is displayed
-2019-Oct-31 09:15:41 [Test] INFO  : The element 'suggestion list' was visible. Screenshot taken: true
-2019-Oct-31 09:15:41 [Test] INFO  : - Operation completed -
-
-2019-Oct-31 09:15:41 [Test] INFO  :  Operation: Click on specific element of the suggestion list
-2019-Oct-31 09:15:42 [Test] INFO  : The element 'element '1' from suggestion list' was clicked. Screenshot taken: false
-2019-Oct-31 09:15:42 [Test] INFO  : - Operation completed -
-
-2019-Oct-31 09:15:42 [Test] INFO  :  Operation: Check the google results page
-2019-Oct-31 09:15:42 [Test] INFO  : The element 'all results option' was visible. Screenshot taken: true
-2019-Oct-31 09:15:42 [Test] INFO  : - Operation completed -
-
-2019-Oct-31 09:15:42 [Test] INFO  :  Operation: Click on the first search result
-2019-Oct-31 09:15:43 [Test] INFO  : The element 'first search result' was clicked. Screenshot taken: false
-2019-Oct-31 09:15:43 [Test] INFO  : - Operation completed -
-
-2019-Oct-31 09:15:43 [Test] INFO  :  Operation: Compare current url with the expected
-2019-Oct-31 09:15:44 [Test] INFO  : The browser url is 'https://es.wikipedia.org/wiki/El_nombre_del_viento'
-2019-Oct-31 09:15:44 [Test] INFO  : Driver closed
-2019-Oct-31 09:15:44 [Test] INFO  : Test end
+  <system-out><![CDATA[Feature: Search in google home page
+2020-May-14 23:37:01 [Test] INFO  : Test end
+2020-May-14 23:37:01 [Test] INFO  : Test end
+2020-May-14 23:37:01 [Test] INFO  : Test end
 
   @TechTest
   Scenario: The user can seatch by using the suggestions  ?[90m# GoogleSearch.feature:22?[0m
-    ?[32mGiven ?[0m?[32mI’m on the homepage?[0m                             ?[90m# StepDefinition.ImOnTheHomepage()?[0m
-    ?[32mWhen ?[0m?[32mI type 'The name of the w' into the search field?[0m ?[90m# StepDefinition.iTypeTheNameOfTheWIntoTheSearchField()?[0m
-    ?[32mAnd ?[0m?[32mthe suggestions list is displayed?[0m                 ?[90m# StepDefinition.theSuggestionsListIsDisplayed()?[0m
-    ?[32mAnd ?[0m?[32mI click on the first suggestion in the list?[0m       ?[90m# StepDefinition.iClickOnTheFirstSuggestionInTheList()?[0m
-    ?[32mThen ?[0m?[32mI go to the search results page?[0m                  ?[90m# StepDefinition.iGoToTheSearchResultsPage()?[0m
-    ?[32mWhen ?[0m?[32mI click on the first result link?[0m                 ?[90m# StepDefinition.iClickOnTheFirstResultLink()?[0m
-    ?[31mThen ?[0m?[31mI go to the 'Patrick Rothfuss - The Books' page?[0m  ?[90m# StepDefinition.iGoToThePatrickRothfussTheBooksPage()?[0m
-      ?[31morg.junit.ComparisonFailure: the URL obtained was 'https://es.wikipedia.org/wiki/El_nombre_del_viento' but the expected is 'https://www.patrickrothfuss.com/content/books.asp'. expected:<https://[www.patrickrothfuss.com/content/books.asp]> but was:<https://[es.wikipedia.org/wiki/El_nombre_del_viento]>
-      	at org.junit.Assert.assertEquals(Assert.java:115)
-      	at com.google.googleTest.businessController.BusinessController.compareTabURL(BusinessController.java:152)
-      	at com.google.googleTest.steps.StepDefinition.iGoToThePatrickRothfussTheBooksPage(StepDefinition.java:86)
-      	at ✽.Then I go to the 'Patrick Rothfuss - The Books' page(GoogleSearch.feature:29)
-      ?[0m
+    ?[33mGiven ?[0m?[33mI’m on the homepage?[0m
+    ?[36mWhen ?[0m?[36mI type 'The name of the w' into the search field?[0m ?[90m# StepDefinition.iTypeTheNameOfTheWIntoTheSearchField()?[0m
+    ?[36mAnd ?[0m?[36mthe suggestions list is displayed?[0m                 ?[90m# StepDefinition.theSuggestionsListIsDisplayed()?[0m
+    ?[36mAnd ?[0m?[36mI click on the first suggestion in the list?[0m       ?[90m# StepDefinition.iClickOnTheFirstSuggestionInTheList()?[0m
+    ?[36mThen ?[0m?[36mI go to the search results page?[0m                  ?[90m# StepDefinition.iGoToTheSearchResultsPage()?[0m
+    ?[36mWhen ?[0m?[36mI click on the first result link?[0m                 ?[90m# StepDefinition.iClickOnTheFirstResultLink()?[0m
+    ?[36mThen ?[0m?[36mI go to the 'Patrick Rothfuss - The Books' page?[0m  ?[90m# StepDefinition.iGoToThePatrickRothfussTheBooksPage()?[0m
 
-?[31mFailed scenarios:?[0m
-?[31mGoogleSearch.feature:4 ?[0m# Scenario: User can search with 'Google Search'
-?[31mGoogleSearch.feature:12 ?[0m# Scenario: User can search by using the suggestions
-?[31mGoogleSearch.feature:22 ?[0m# Scenario: The user can seatch by using the suggestions
+3 Scenarios (?[33m3 undefined?[0m)
+18 Steps (?[36m15 skipped?[0m, ?[33m3 undefined?[0m)
+0m0.419s
 
-3 Scenarios (?[31m3 failed?[0m)
-18 Steps (?[31m3 failed?[0m, ?[32m15 passed?[0m)
-0m21,507s
 
-org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:<[El nombre del viento - Wikipedia, la enciclopedia libre]> but was:<[The Name of the Wind - Patrick Rothfuss]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)
-	at com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)
-	at ✽.And the first result is 'The Name of the Wind - Patrick Rothfuss'(GoogleSearch.feature:9)
+You can implement missing steps with the snippets below:
 
-org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:<[El nombre del viento - Wikipedia, la enciclopedia libre]> but was:<[The Name of the Wind - Patrick Rothfuss]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at com.google.googleTest.businessController.BusinessController.checkSpecificSearchResult(BusinessController.java:103)
-	at com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:76)
-	at ✽.And the first result is 'The Name of the Wind - Patrick Rothfuss'(GoogleSearch.feature:18)
-
-org.junit.ComparisonFailure: the URL obtained was 'https://es.wikipedia.org/wiki/El_nombre_del_viento' but the expected is 'https://www.patrickrothfuss.com/content/books.asp'. expected:<https://[www.patrickrothfuss.com/content/books.asp]> but was:<https://[es.wikipedia.org/wiki/El_nombre_del_viento]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at com.google.googleTest.businessController.BusinessController.compareTabURL(BusinessController.java:152)
-	at com.google.googleTest.steps.StepDefinition.iGoToThePatrickRothfussTheBooksPage(StepDefinition.java:86)
-	at ✽.Then I go to the 'Patrick Rothfuss - The Books' page(GoogleSearch.feature:29)
+@Given("^I’m on the homepage$")
+public void i_m_on_the_homepage() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
 
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[java.lang.NullPointerException
+	at com.google.googleTest.controllers.WebActions.closeWebApp(WebActions.java:85)
+	at com.google.googleTest.controllers.BusinessController.closeBrowser(BusinessController.java:42)
+	at com.google.googleTest.steps.StepDefinition.tearDown(StepDefinition.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+java.lang.NullPointerException
+	at com.google.googleTest.controllers.WebActions.closeWebApp(WebActions.java:85)
+	at com.google.googleTest.controllers.BusinessController.closeBrowser(BusinessController.java:42)
+	at com.google.googleTest.steps.StepDefinition.tearDown(StepDefinition.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+java.lang.NullPointerException
+	at com.google.googleTest.controllers.WebActions.closeWebApp(WebActions.java:85)
+	at com.google.googleTest.controllers.BusinessController.closeBrowser(BusinessController.java:42)
+	at com.google.googleTest.steps.StepDefinition.tearDown(StepDefinition.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></system-err>
 </testsuite>
