@@ -1,6 +1,22 @@
 plugins {
     id 'java'
 }
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.owasp:dependency-check-gradle:${project.version}'
+    }
+}
+apply plugin: 'org.owasp.dependencycheck'
+
+check.dependsOn dependencyCheckAnalyze
+
+wrapper {
+    gradleVersion = '5.4.1'
+    distributionType = Wrapper.DistributionType.ALL
+}
 
 group 'com.google.googleTest'
 version '1.0-SNAPSHOT'
