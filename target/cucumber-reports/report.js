@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 394953000,
+  "duration": 368680500,
   "status": "passed"
 });
 formatter.scenario({
@@ -26,7 +26,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 5,
-  "name": "I’m on the homepage",
+  "name": "Im on the homepage",
   "keyword": "Given "
 });
 formatter.step({
@@ -49,40 +49,48 @@ formatter.step({
   "name": "the first result is \u0027The Name of the Wind - Patrick Rothfuss\u0027",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "StepDefinition.iMOnTheHomepage()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 4957456200,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iTypeTheNameOfTheWindIntoTheSearchField()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1067345900,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iClickTheGoogleSearchButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1159867400,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iGoToTheSearchResultsPage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 512240300,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 31658000,
+  "error_message": "org.junit.ComparisonFailure: the result was \u0027El nombre del viento - Wikipedia, la enciclopedia libre\u0027 but the expected is \u0027The Name of the Wind - Patrick Rothfuss\u0027. expected:\u003c[El nombre del viento - Wikipedia, la enciclopedia libre]\u003e but was:\u003c[The Name of the Wind - Patrick Rothfuss]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat com.google.googleTest.controllers.BusinessController.checkSpecificSearchResult(BusinessController.java:102)\r\n\tat com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:72)\r\n\tat ✽.And the first result is \u0027The Name of the Wind - Patrick Rothfuss\u0027(GoogleSearch.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.after({
-  "duration": 5349700,
+  "duration": 4879123100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4902900,
+  "duration": 4764000,
   "status": "passed"
 });
 formatter.scenario({
@@ -101,7 +109,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 13,
-  "name": "I’m on the homepage",
+  "name": "Im on the homepage",
   "keyword": "Given "
 });
 formatter.step({
@@ -129,53 +137,62 @@ formatter.step({
   "name": "the first result is \u0027The Name of the Wind - Patrick Rothfuss\u0027",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "StepDefinition.iMOnTheHomepage()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 4403513500,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iTypeTheNameOfTheWIntoTheSearchField()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 137909500,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.theSuggestionsListIsDisplayed()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 865267400,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iClickOnTheFirstSuggestionInTheList()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1125933400,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iGoToTheSearchResultsPage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 492256100,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 26656700,
+  "error_message": "org.junit.ComparisonFailure: the result was \u0027El nombre del viento - Wikipedia, la enciclopedia libre\u0027 but the expected is \u0027The Name of the Wind - Patrick Rothfuss\u0027. expected:\u003c[El nombre del viento - Wikipedia, la enciclopedia libre]\u003e but was:\u003c[The Name of the Wind - Patrick Rothfuss]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat com.google.googleTest.controllers.BusinessController.checkSpecificSearchResult(BusinessController.java:102)\r\n\tat com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:72)\r\n\tat ✽.And the first result is \u0027The Name of the Wind - Patrick Rothfuss\u0027(GoogleSearch.feature:18)\r\n",
+  "status": "failed"
 });
 formatter.after({
-  "duration": 2875700,
+  "duration": 4868527500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 6838600,
+  "duration": 5338900,
   "status": "passed"
 });
 formatter.scenario({
   "line": 22,
-  "name": "The user can seatch by using the suggestions",
+  "name": "The user can search by using the suggestions and go to the selected page",
   "description": "",
-  "id": "search-in-google-home-page;the-user-can-seatch-by-using-the-suggestions",
+  "id": "search-in-google-home-page;the-user-can-search-by-using-the-suggestions-and-go-to-the-selected-page",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -187,7 +204,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 23,
-  "name": "I’m on the homepage",
+  "name": "Im on the homepage",
   "keyword": "Given "
 });
 formatter.step({
@@ -212,41 +229,61 @@ formatter.step({
 });
 formatter.step({
   "line": 28,
+  "name": "the first result is \u0027The Name of the Wind - Patrick Rothfuss\u0027",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 29,
   "name": "I click on the first result link",
   "keyword": "When "
 });
 formatter.step({
-  "line": 29,
+  "line": 30,
   "name": "I go to the \u0027Patrick Rothfuss - The Books\u0027 page",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "StepDefinition.iMOnTheHomepage()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 4788146800,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iTypeTheNameOfTheWIntoTheSearchField()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 114757700,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.theSuggestionsListIsDisplayed()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 869010100,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iClickOnTheFirstSuggestionInTheList()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1857335300,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iGoToTheSearchResultsPage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 417435700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss()"
+});
+formatter.result({
+  "duration": 28720400,
+  "error_message": "org.junit.ComparisonFailure: the result was \u0027El nombre del viento - Wikipedia, la enciclopedia libre\u0027 but the expected is \u0027The Name of the Wind - Patrick Rothfuss\u0027. expected:\u003c[El nombre del viento - Wikipedia, la enciclopedia libre]\u003e but was:\u003c[The Name of the Wind - Patrick Rothfuss]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat com.google.googleTest.controllers.BusinessController.checkSpecificSearchResult(BusinessController.java:102)\r\n\tat com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:72)\r\n\tat ✽.And the first result is \u0027The Name of the Wind - Patrick Rothfuss\u0027(GoogleSearch.feature:28)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "StepDefinition.iClickOnTheFirstResultLink()"
@@ -261,7 +298,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 4401400,
+  "duration": 4623901400,
   "status": "passed"
 });
 });

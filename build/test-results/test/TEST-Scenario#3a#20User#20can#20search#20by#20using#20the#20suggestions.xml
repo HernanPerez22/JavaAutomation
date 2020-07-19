@@ -1,36 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Scenario: User can search by using the suggestions" tests="7" skipped="6" failures="0" errors="0" timestamp="2020-05-15T04:37:01" hostname="DESKTOP-GM3SB35" time="0.013">
+<testsuite name="Scenario: User can search by using the suggestions" tests="7" skipped="0" failures="2" errors="0" timestamp="2020-07-19T20:28:19" hostname="DESKTOP-GM3SB35" time="7.526">
   <properties/>
-  <testcase name="Given I’m on the homepage" classname="Scenario: User can search by using the suggestions" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="When I type 'The name of the w' into the search field" classname="Scenario: User can search by using the suggestions" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="And the suggestions list is displayed" classname="Scenario: User can search by using the suggestions" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="And I click on the first suggestion in the list" classname="Scenario: User can search by using the suggestions" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="Then I go to the search results page" classname="Scenario: User can search by using the suggestions" time="0.0">
-    <skipped/>
-  </testcase>
+  <testcase name="Given Im on the homepage" classname="Scenario: User can search by using the suggestions" time="0.0"/>
+  <testcase name="When I type 'The name of the w' into the search field" classname="Scenario: User can search by using the suggestions" time="0.0"/>
+  <testcase name="And the suggestions list is displayed" classname="Scenario: User can search by using the suggestions" time="0.0"/>
+  <testcase name="And I click on the first suggestion in the list" classname="Scenario: User can search by using the suggestions" time="0.0"/>
+  <testcase name="Then I go to the search results page" classname="Scenario: User can search by using the suggestions" time="0.0"/>
   <testcase name="And the first result is 'The Name of the Wind - Patrick Rothfuss'" classname="Scenario: User can search by using the suggestions" time="0.0">
-    <skipped/>
+    <failure message="org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;[El nombre del viento - Wikipedia, la enciclopedia libre]&gt; but was:&lt;[The Name of the Wind - Patrick Rothfuss]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;[El nombre del viento - Wikipedia, la enciclopedia libre]&gt; but was:&lt;[The Name of the Wind - Patrick Rothfuss]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at com.google.googleTest.controllers.BusinessController.checkSpecificSearchResult(BusinessController.java:102)
+	at com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:72)
+	at ✽.And the first result is 'The Name of the Wind - Patrick Rothfuss'(GoogleSearch.feature:18)
+</failure>
   </testcase>
-  <testcase name="classMethod" classname="Scenario: User can search by using the suggestions" time="0.022"/>
-  <system-out><![CDATA[2020-May-14 23:37:01 [Test] INFO  : Test start
-2020-May-14 23:37:01 [Test] INFO  : Scenario: User can search by using the suggestions
-2020-May-14 23:37:01 [Test] INFO  : Seature: Search in google home page
+  <testcase name="classMethod" classname="Scenario: User can search by using the suggestions" time="11.939">
+    <failure message="org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;[El nombre del viento - Wikipedia, la enciclopedia libre]&gt; but was:&lt;[The Name of the Wind - Patrick Rothfuss]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;[El nombre del viento - Wikipedia, la enciclopedia libre]&gt; but was:&lt;[The Name of the Wind - Patrick Rothfuss]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at com.google.googleTest.controllers.BusinessController.checkSpecificSearchResult(BusinessController.java:102)
+	at com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:72)
+	at ✽.And the first result is 'The Name of the Wind - Patrick Rothfuss'(GoogleSearch.feature:18)
+</failure>
+  </testcase>
+  <system-out><![CDATA[2020-Jul-19 15:28:15 [Test] INFO  : Test start
+2020-Jul-19 15:28:15 [Test] INFO  : Scenario: User can search by using the suggestions
+2020-Jul-19 15:28:15 [Test] INFO  : Feature: Search in google home page
 
   @TechTest
   Scenario: User can search with 'Google Search'                      ?[90m# GoogleSearch.feature:4?[0m
-    ?[33mGiven ?[0m?[33mI’m on the homepage?[0m
-    ?[36mWhen ?[0m?[36mI type 'The name of the wind' into the search field?[0m          ?[90m# StepDefinition.iTypeTheNameOfTheWindIntoTheSearchField()?[0m
-    ?[36mAnd ?[0m?[36mI click the Google Search button?[0m                              ?[90m# StepDefinition.iClickTheGoogleSearchButton()?[0m
-    ?[36mThen ?[0m?[36mI go to the search results page?[0m                              ?[90m# StepDefinition.iGoToTheSearchResultsPage()?[0m
-    ?[36mAnd ?[0m?[36mthe first result is 'The Name of the Wind - Patrick Rothfuss'?[0m ?[90m# StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss()?[0m
+    ?[32mGiven ?[0m?[32mIm on the homepage?[0m                                          ?[90m# StepDefinition.iMOnTheHomepage()?[0m
+    ?[32mWhen ?[0m?[32mI type 'The name of the wind' into the search field?[0m          ?[90m# StepDefinition.iTypeTheNameOfTheWindIntoTheSearchField()?[0m
+    ?[32mAnd ?[0m?[32mI click the Google Search button?[0m                              ?[90m# StepDefinition.iClickTheGoogleSearchButton()?[0m
+    ?[32mThen ?[0m?[32mI go to the search results page?[0m                              ?[90m# StepDefinition.iGoToTheSearchResultsPage()?[0m
+    ?[31mAnd ?[0m?[31mthe first result is 'The Name of the Wind - Patrick Rothfuss'?[0m ?[90m# StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss()?[0m
+      ?[31morg.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:<[El nombre del viento - Wikipedia, la enciclopedia libre]> but was:<[The Name of the Wind - Patrick Rothfuss]>
+      	at org.junit.Assert.assertEquals(Assert.java:115)
+      	at com.google.googleTest.controllers.BusinessController.checkSpecificSearchResult(BusinessController.java:102)
+      	at com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:72)
+      	at ?.And the first result is 'The Name of the Wind - Patrick Rothfuss'(GoogleSearch.feature:9)
+      ?[0m
+2020-Jul-19 15:28:15 [Test] INFO  :  Operation: Go to google home page
+2020-Jul-19 15:28:19 [Test] INFO  : Driver selected: 'Chrome'. The browser opened the following url: 'http://www.google.com'.
+2020-Jul-19 15:28:19 [Test] INFO  : The element 'google search button' was visible. Screenshot taken: true
+2020-Jul-19 15:28:19 [Test] INFO  : - Operation completed -
+
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 3975
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 19, 2020 3:28:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
 </testsuite>

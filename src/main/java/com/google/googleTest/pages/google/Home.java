@@ -15,10 +15,10 @@ public class Home {
     @FindBy(how = How.XPATH, using = "//input[@name='q']//parent::div")
     private WebElement txtSearchField;
 
-    @FindBy(how = How.XPATH, using = "//div[@class='FPdoLc VlcLAe']//input[@name='btnK']")
+    @FindBy(how = How.XPATH, using = "//div[@class='FPdoLc tfB0Bf']//input[@value='Buscar con Google']")
     private WebElement btnGoogleSearch;
 
-    @FindBy(how = How.XPATH, using = "//div[@class='FPdoLc VlcLAe']//input[@name='btnI']")
+    @FindBy(how = How.XPATH, using = "//div[@class='FPdoLc tfB0Bf']//input[@name='btnI']")
     private WebElement btnImFeelingLucky;
 
     @FindBy(how = How.XPATH, using = "//img[@alt='Google']")

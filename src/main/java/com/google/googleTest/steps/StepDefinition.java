@@ -37,7 +37,7 @@ public class StepDefinition {
 
         Log.LOGGER.info("Test start");
         Log.LOGGER.info("Scenario: ".concat(scenarioName));
-        Log.LOGGER.info("Seature: ".concat(featureName));
+        Log.LOGGER.info("Feature: ".concat(featureName));
     }
 
     @After
@@ -46,10 +46,6 @@ public class StepDefinition {
         Log.LOGGER.info("Test end");
     }
 
-    @Given("I’m on the homepage$")
-    public void ImOnTheHomepage(){
-        businessController.goToGoogleHome();
-    }
 
     @When("^I type 'The name of the wind' into the search field$")
     public void iTypeTheNameOfTheWindIntoTheSearchField() {
@@ -94,5 +90,10 @@ public class StepDefinition {
     @And("^I click on the first suggestion in the list$")
     public void iClickOnTheFirstSuggestionInTheList() {
         businessController.clickOnSpecificElementFromSuggestionList(0);
+    }
+
+    @Given("^Im on the homepage$")
+    public void iMOnTheHomepage() {
+        businessController.goToGoogleHome();
     }
 }

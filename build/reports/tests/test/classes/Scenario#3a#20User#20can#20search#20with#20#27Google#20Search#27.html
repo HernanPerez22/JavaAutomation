@@ -29,19 +29,19 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">2</div>
 <p>failures</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="ignored">
-<div class="counter">5</div>
+<div class="counter">0</div>
 <p>ignored</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.503s</div>
+<div class="counter">13.076s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox skipped" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">66%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,16 +61,46 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
 </li>
 <li>
-<a href="#tab2">Standard error</a>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="And the first result is 'The Name of the Wind - Patrick Rothfuss'"></a>
+<h3 class="failures">And the first result is 'The Name of the Wind - Patrick Rothfuss'</h3>
+<span class="code">
+<pre>org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;[El nombre del viento - Wikipedia, la enciclopedia libre]&gt; but was:&lt;[The Name of the Wind - Patrick Rothfuss]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at com.google.googleTest.controllers.BusinessController.checkSpecificSearchResult(BusinessController.java:102)
+	at com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:72)
+	at ✽.And the first result is 'The Name of the Wind - Patrick Rothfuss'(GoogleSearch.feature:9)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="classMethod"></a>
+<h3 class="failures">classMethod</h3>
+<span class="code">
+<pre>org.junit.ComparisonFailure: the result was 'El nombre del viento - Wikipedia, la enciclopedia libre' but the expected is 'The Name of the Wind - Patrick Rothfuss'. expected:&lt;[El nombre del viento - Wikipedia, la enciclopedia libre]&gt; but was:&lt;[The Name of the Wind - Patrick Rothfuss]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at com.google.googleTest.controllers.BusinessController.checkSpecificSearchResult(BusinessController.java:102)
+	at com.google.googleTest.steps.StepDefinition.theFirstResultIsTheNameOfTheWindPatrickRothfuss(StepDefinition.java:72)
+	at ✽.And the first result is 'The Name of the Wind - Patrick Rothfuss'(GoogleSearch.feature:9)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -81,50 +111,61 @@
 </tr>
 </thead>
 <tr>
-<td class="skipped">And I click the Google Search button</td>
-<td class="skipped">-</td>
-<td class="skipped">ignored</td>
-</tr>
-<tr>
-<td class="skipped">And the first result is 'The Name of the Wind - Patrick Rothfuss'</td>
-<td class="skipped">-</td>
-<td class="skipped">ignored</td>
-</tr>
-<tr>
-<td class="skipped">Given I’m on the homepage</td>
-<td class="skipped">-</td>
-<td class="skipped">ignored</td>
-</tr>
-<tr>
-<td class="skipped">Then I go to the search results page</td>
-<td class="skipped">-</td>
-<td class="skipped">ignored</td>
-</tr>
-<tr>
-<td class="skipped">When I type 'The name of the wind' into the search field</td>
-<td class="skipped">-</td>
-<td class="skipped">ignored</td>
-</tr>
-<tr>
-<td class="success">classMethod</td>
-<td class="success">0.502s</td>
+<td class="success">And I click the Google Search button</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">And the first result is 'The Name of the Wind - Patrick Rothfuss'</td>
+<td class="failures">0.001s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">Given Im on the homepage</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Then I go to the search results page</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When I type 'The name of the wind' into the search field</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">classMethod</td>
+<td class="failures">13.075s</td>
+<td class="failures">failed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2020-May-14 23:37:00 [Test] INFO  : Test start
-2020-May-14 23:37:00 [Test] INFO  : Scenario: User can search with 'Google Search'
-2020-May-14 23:37:00 [Test] INFO  : Seature: Search in google home page
+<pre>2020-Jul-19 15:28:02 [Test] INFO  : Test start
+2020-Jul-19 15:28:02 [Test] INFO  : Scenario: User can search with 'Google Search'
+2020-Jul-19 15:28:02 [Test] INFO  : Feature: Search in google home page
+2020-Jul-19 15:28:02 [Test] INFO  :  Operation: Go to google home page
+2020-Jul-19 15:28:07 [Test] INFO  : Driver selected: 'Chrome'. The browser opened the following url: 'http://www.google.com'.
+2020-Jul-19 15:28:07 [Test] INFO  : The element 'google search button' was visible. Screenshot taken: true
+2020-Jul-19 15:28:07 [Test] INFO  : - Operation completed -
+
 </pre>
 </span>
 </div>
-<div id="tab2" class="tab">
+<div id="tab3" class="tab">
 <h2>Standard error</h2>
 <span class="code">
 <pre>ERROR StatusLogger No Log4j 2 configuration file found. Using default configuration (logging only errors to the console), or user programmatically provided configurations. Set system property 'log4j2.debug' to show Log4j 2 internal initialization logging. See https://logging.apache.org/log4j/2.x/manual/configuration.html for instructions on how to configure Log4j 2
+Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 22813
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 19, 2020 3:28:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
 </pre>
 </span>
 </div>
@@ -136,7 +177,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.8</a> at 14 may. 2020 23:37:01</p>
+<a href="http://www.gradle.org">Gradle 5.4.1</a> at 19 jul. 2020 15:28:40</p>
 </div>
 </div>
 </body>

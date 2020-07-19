@@ -13,7 +13,7 @@ public class Results {
     @FindBy(how = How.XPATH, using = "//div[@id='search']//h3")
     private List<WebElement> lnkResults;
 
-    @FindBy(how = How.XPATH, using = "//div[@id='hdtb-msb-vis']/div[@aria-selected='true']")
+    @FindBy(how = How.XPATH, using = "//div[@class='hdtb-mitem hdtb-msel hdtb-imb']")
     private WebElement opcAllResults;
 
     public boolean checkPage() throws Exception{

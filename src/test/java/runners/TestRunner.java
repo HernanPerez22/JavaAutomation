@@ -11,7 +11,7 @@ import java.io.File;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/main/resources/features/"
-        , glue = {"com/google/googleTest/steps/"}
+        , glue = {"com/google/googleTest/steps"}
         , plugin = {"pretty", "html:target/cucumber-reports", "json:target/cucumberProyectoBase.json","com.cucumber.listener.ExtentCucumberFormatter:"}
         , tags = {"@TechTest"}
 )
